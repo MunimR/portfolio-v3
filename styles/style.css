@@ -1,0 +1,88 @@
+:root {
+    --white: #FEFCFB;
+    --black: #1C110A;
+    --color-1: #034C3C;
+    --color-2: #72A98F;
+}
+
+/* https://coolors.co/1c110a-fefcfb-034c3c-72a98f */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        font-size: 16px;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 22px;
+    }
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: rebeccapurple;
+
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    font-size: 1em;
+    font-weight: light;
+
+    background-color: var(--color-1);
+}
+
+nav a {
+    padding: 1rem 2.5rem 1rem 0;
+    color: var(--color-2);
+
+    text-underline-offset: .25em;
+    text-decoration-color: var(--color-1);
+
+    transition: text-decoration-color 0.3s;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--color-2);
+}
+
+main {
+    width: 100%;
+    flex-grow: 1;
+
+    padding: 0 10%;
+
+    background-color: var(--white);
+}
