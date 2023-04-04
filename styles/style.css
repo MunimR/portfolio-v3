@@ -1,8 +1,13 @@
 :root {
-    --white: #FEFCFB;
-    --black: #1C110A;
-    --color-1: #034C3C;
-    --color-2: #72A98F;
+    /* --white: #FEFCFB;
+    --black: #1C110A; */
+    /* --color-1: #034C3C;
+    --color-2: #72A98F; */
+
+    --black: #353535;
+
+    --color-1: #284B63;
+    --color-2: #FFFFFF;
 }
 
 /* https://coolors.co/1c110a-fefcfb-034c3c-72a98f */
@@ -50,8 +55,6 @@ body {
 
     overflow: hidden;
 
-    background-color: rebeccapurple;
-
     font-family: 'Inter', sans-serif;
 }
 
@@ -89,13 +92,30 @@ main {
     flex-grow: 1;
 
     overflow-y: scroll;
+    scroll-behavior: smooth;
 
     /* padding: 0 10%; */
 
-    background-color: var(--white);
+    background-color: var(--black);
 }
 
 article {
     width: 100%;
     height: 100%;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+#king-piece {
+    position: absolute;
+    bottom: -1%;
+    max-height: 75%;
+    max-width: 25%;
+}
+
+
+.pad-10 {
+    padding: 0 10%;
 }
